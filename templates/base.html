@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Portfolio{% endblock %}</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="{% url 'rmm_portfolio:index' %}">Home</a></li>
+            <li><a href="{% url 'rmm_portfolio:projects' %}">Projects</a></li>
+            <li><a href="{% url 'rmm_contact:index' %}">Contact</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>My Projects</h1>
+<ul>
+    <li><a href="{% url 'rmm_portfolio:project-detail' 0 %}">Project 0</a></li>
+    <li><a href="{% url 'rmm_portfolio:project-detail' 1 %}">Project 1</a></li>
+    <li><a href="{% url 'rmm_portfolio:project-detail' 2 %}">Project 2</a></li>
+</ul>
+{% endblock %}
